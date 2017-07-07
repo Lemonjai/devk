@@ -23,6 +23,7 @@ gem 'font-awesome-rails'
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'rails_12factor'
+gem 'friendly_id', '~> 5.1.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
