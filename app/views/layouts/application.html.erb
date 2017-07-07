@@ -3,10 +3,21 @@
   <head>
     <title>Devknight</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <header id="main_navigation" class="clearfix">
+  <a href="javascript:void(0);" style="font-size:1.5em;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html" class="name">DevKnight</a>
+    <nav id="mySidenav" class="sidenav">
+      <a href="article.html">Tutorials</a>
+      <a href="#">Challenges</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
   <body>
     <%= yield %>
