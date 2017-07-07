@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use postgresql as the database for Active Record
@@ -24,6 +24,7 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'rails_12factor'
 gem 'friendly_id', '~> 5.1.0'
+gem 'will_paginate'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
