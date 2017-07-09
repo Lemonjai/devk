@@ -6,6 +6,22 @@ class ProjectsController < ApplicationController
     @projects = Project.all.order("created_at DESC")
   end
 
+   def edit
+  end
+
+  def update
+    if @project.update project_params
+      redirect_to @project, notice: "Challenge has been updated"
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
+
   def show
   end
 
